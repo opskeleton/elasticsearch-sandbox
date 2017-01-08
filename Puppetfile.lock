@@ -1,0 +1,34 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    ceritsc-yum (0.9.8)
+      puppetlabs-stdlib (>= 4.2.0)
+    elasticsearch-elasticsearch (0.15.1)
+      ceritsc-yum (>= 0.9.6)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-java (< 2.0.0, >= 1.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+      richardc-datacat (< 1.0.0, >= 0.6.2)
+      thias-sysctl (< 2.0.0, >= 1.0.6)
+    puppetlabs-apt (2.3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-java (1.6.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
+    puppetlabs-stdlib (4.14.0)
+    richardc-datacat (0.6.2)
+    thias-sysctl (1.0.6)
+
+GIT
+  remote: git://github.com/pulling-strings/puppet-jdk.git
+  ref: master
+  sha: 91ed9a953cedb2171a48b724870922958aaddc65
+  specs:
+    strings-jdk (0.1.0)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
+
+DEPENDENCIES
+  elasticsearch-elasticsearch (>= 0)
+  puppetlabs-stdlib (>= 0)
+  strings-jdk (>= 0)
+
