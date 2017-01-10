@@ -1,9 +1,14 @@
 node default {
 
   include apt
+  
   class{'jdk':
     version => 8
   }
+
+  package{'libaugeas-ruby':
+    ensure  => present
+  } ->
 
 	class { 'elasticsearch':
 		java_install => false,
