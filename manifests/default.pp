@@ -12,7 +12,7 @@ node default {
   class { 'elasticsearch':
     java_install => false,
     manage_repo  => true,
-    repo_version => '5.x',
+    repo_version => '2.x',
   }
 
   elasticsearch::instance { 'es-01':
